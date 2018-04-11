@@ -13,94 +13,131 @@
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="mainNav">
 			<div class="container">
 				<a href="index.html" class="navbar-brand">EN</a>
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a href="index.html" class="nav-link">Portfolio</a>
+				<ul class="navbar-nav ml-auto" id="nav-list">
+					<li class="nav-item" id="home">
+						<a href="#" id="home-b" data-tag="index-page">
+					        <i class="fas fa-home" id="home-svg"></i>
+				        </a>
 					</li>
-					<li class="nav-item">
-						<a href="Contact.html" class="nav-link">Contact</a>
+					<li class="nav-item" id="portfolio-b">
+						<a href="#" class="nav-link" data-tag="portfolio-page">Portfolio</a>
 					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Testimonials</a>
+					<li class="nav-item" id="contact-b">
+						<a href="#" class="nav-link" data-tag="contact-page">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
-		<!-- random shit -->
-		<!-- <header id="slideshow" class="carousel" data-ride="carousel">
-			<div class="border-gradient"></div>
-			<div class="carousel-inner" role="listbox">
-				<div class="row carousel-item active">
-					<div class="col-12 slide-content" id="slide1">
-						<h1>Jr Front End Web Dev</h1>
-						<h3 class="letter-gradient">HTML . CSS . JS . Bootstrap . JQUERY</h3>
+		<div id="index-page" class="">
+			<div id="demo" class="carousel slide col-12" data-ride="carousel" data-interval="4000" data-ride="true">
+			  <div class="carousel-inner">
+			     <div class="carousel-item active slide-content" id="slide1">
+			     	<h1>Jr Front End Web Dev</h1>
+			     	<h3 class="letter-gradient">HTML . CSS . JS . Bootstrap . JQUERY</h3>
+			     </div>
+			     <div class="carousel-item slide-content" id="slide2">
+			     	<h1>Self taught Web Developer Working toward full stack</h1>
+			     </div>
+			     <div class="carousel-item slide-content" id="slide3">
+			     	<h1>Hire Me!</h1>
+			     	<h3>Contact me at ed927069@gmail.com</h3>
+			     </div>
+			   </div>
+			</div>
+			<div id="templates" class="col-12">
+				<div class="row">
+					<div class="col-3 templates">
+						<img src="rsc/images/testdemo.png" alt="" class="img-thumbnail">
+					</div>
+					<div class="col-3 templates">
+						<img src="rsc/images/glassdemo.png" alt="" class="img-thumbnail">
+					</div>
+					<div class="col-3 templates">
+						<img src="rsc/images/template1.png" alt="" class="img-thumbnail">
+					</div>
+					<div class="col-3 templates">
+						<img src="rsc/images/test-project.png" alt="" class="img-thumbnail">
 					</div>
 				</div>
-				<div class="row carousel-item">
-					<div class="col-12 slide-content" id="slide2">
-						<h1>Self taught Web Developer Working toward full stack</h1>
+				<div class="row">
+					<div class="col-3 templates">
+						<img src="rsc/images/defaultpic.jpg" alt="" class="img-thumbnail">
 					</div>
-				</div>
-				<div class="row carousel-item">
-					<div class="col-12 slide-content" id="slide3">
-						<h1>Hire Me!</h1>
-						<h3>Contact me at ed927069@gmail.com</h3>
+					<div class="col-3 templates">
+						<img src="rsc/images/defaultpic.jpg" alt="" class="img-thumbnail">
+					</div>
+					<div class="col-3 templates">
+						<img src="rsc/images/defaultpic.jpg" alt="" class="img-thumbnail">
+					</div>
+					<div class="col-3 templates">
+						<img src="rsc/images/defaultpic.jpg" alt="" class="img-thumbnail">
 					</div>
 				</div>
 			</div>
-			<div class="border-gradient"></div>
-		</header> -->
-		<div id="demo" class="carousel slide col-12" data-ride="carousel" data-interval="4000" data-ride="true">
-		  <div class="carousel-inner">
-		     <div class="carousel-item active slide-content" id="slide1">
-		     	<h1>Jr Front End Web Dev</h1>
-		     	<h3 class="letter-gradient">HTML . CSS . JS . Bootstrap . JQUERY</h3>
-		     </div>
-		     <div class="carousel-item slide-content" id="slide2">
-		     	<h1>Self taught Web Developer Working toward full stack</h1>
-		     </div>
-		     <div class="carousel-item slide-content" id="slide3">
-		     	<h1>Hire Me!</h1>
-		     	<h3>Contact me at ed927069@gmail.com</h3>
-		     </div>
-		   </div>
 		</div>
-		<div id="templates" class="col-12">
-			<div class="row">
-				<div class="col-3 templates">
-					<img src="rsc/images/testdemo.png" alt="" class="img-thumbnail">
+		<div id="portfolio-page" class="row hidden">
+			<div class="col-9 mx-auto" id="p-container">
+				<div class="row" id="p-header">
+					<div class="col-5 mx-auto">
+						<h2>PORTFOLIO</h2>
+					</div>
 				</div>
-				<div class="col-3 templates">
-					<img src="rsc/images/glassdemo.png" alt="" class="img-thumbnail">
+				<div class="row">
+					<div class="col-7">
+						<h4>A copy of the FBC site using their image resources recreated with html and css.
+							<br>
+							Currently not much functionality till I learn backend and routes.</h4>
+					</div>
+					<div class="col-5">
+						<img src="rsc/images/testdemo.png" alt="" class="img-thumbnail">
+					</div>
 				</div>
-				<div class="col-3 templates">
-					<img src="rsc/images/template1.png" alt="" class="img-thumbnail">
+				<div class="row">
+					<div class="col-7">
+						<h4>A glass work merchant site work in progress for a friend of mine who has is a small local glass blower.</h4>
+					</div>
+					<div class="col-5">
+						<img src="rsc/images/glassdemo.png" alt="" class="img-thumbnail">
+					</div>
 				</div>
-				<div class="col-3 templates">
-					<img src="rsc/images/test-project.png" alt="" class="img-thumbnail">
+				<div class="row">
+					<div class="col-7">
+						<h4>A Template that Looks clean and simple. </h4>
+					</div>
+					<div class="col-5">
+						<img src="rsc/images/template1.png" alt="" class="img-thumbnail">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-7">
+						<h4>A personal project I tried to start basing my idea on other countrie's government appointment setting for citizen business.</h4> 
+					</div>
+					<div class="col-5">
+						<img src="rsc/images/test-project.png" alt="" class="img-thumbnail">
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-3 templates">
-					<img src="rsc/images/defaultpic.jpg" alt="" class="img-thumbnail">
-				</div>
-				<div class="col-3 templates">
-					<img src="rsc/images/defaultpic.jpg" alt="" class="img-thumbnail">
-				</div>
-				<div class="col-3 templates">
-					<img src="rsc/images/defaultpic.jpg" alt="" class="img-thumbnail">
-				</div>
-				<div class="col-3 templates">
-					<img src="rsc/images/defaultpic.jpg" alt="" class="img-thumbnail">
+		</div>
+		<div id="contact-page" class="row hidden">
+			<div class="col-9 mx-auto" id="c-container">
+				<div id="g-map" class="col-11 mx-auto"></div>
+				<div class="col-10 mx-auto" id=contact-text>
+					<h2>Want to contact me?</h2>
+					<h3>Email me: beeman134@gmail.com</h3>
 				</div>
 			</div>
 		</div>
 
-		<footer></footer>
+		<footer>
+			<p>Website by Edmund Ng</p>
+		</footer>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="lib/js/jquery.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7SIET_ih0AOeBnNQqQjBT9bS18xDmWLI&callback=initMap">
+	</script>
 	<script src="lib/js/main.js"></script>
 </body>
 

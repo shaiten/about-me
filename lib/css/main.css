@@ -7,7 +7,7 @@ body{
 	font: inherit;
 	vertical-align: baseline;
 	display: block;
-
+	background: url(../../rsc/bg/elegant_grid.png);
 }
 .borderb{
 	border: 1px solid black;
@@ -15,10 +15,39 @@ body{
 #content-wrapper{
 	padding: 0;
 }
+.hidden{
+	display: none;
+}
 
+footer{
+	text-align: center;
+	margin-top: 30px;
+	background-color: rgba(79, 79, 74, 0.3);
+}
+	footer p{
+		margin-bottom: 0;
+	}
 /*
 		index.html
 		*/
+#home-svg{
+	color: white;
+	height: 34px;
+	width: 20px;
+	margin-right: 25px;
+}
+	.nav-item *:hover{
+		color: crimson !important;
+	}
+	#home-b:hover{
+		color: crimson !important;
+	}
+	#home-b{
+		display: block;
+		height: 34px ;
+		width: 30px;
+		padding-left: 5px;
+	}
 #slideshow{}
 	.slide-content{
 		text-align: center;
@@ -70,7 +99,7 @@ body{
 	    background-repeat: no-repeat;
 	    background-size: cover;
 	}
-		#slide3 h1,h3{
+		#slide3 *{
 			color: aqua;
 		}
 	.templates{
@@ -101,4 +130,44 @@ body{
 	  transition: transform 1s ease;
 	  transition: transform 1s ease, -webkit-transform 1s ease;
 	  overflow: hidden;
+	}
+/*
+	portfolio page
+	*/
+#portfolio-page{
+	margin:0;
+	margin-top: 30px;
+}
+	#p-container{
+		background-color: white;
+		border:1px dotted black;
+	}
+		#p-header{
+			text-align: center;
+			margin: 20px auto;
+			border: 1px solid white !important;
+		}
+		#p-container .row{
+			margin: 30px auto;
+			border-bottom: 1px solid grey;
+			padding-bottom: 20px;
+		}
+		#p-container h3{
+			margin-top: 20px;
+		}
+/*
+	contact page
+	*/
+#contact-page{
+	margin:0;
+	margin-top: 20px;
+}
+	#g-map{
+		height: 400px;
+        width: 100%;
+	}
+	#contact-text{
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 45px;
 	}
