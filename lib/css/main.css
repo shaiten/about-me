@@ -7,7 +7,7 @@ body{
 	font: inherit;
 	vertical-align: baseline;
 	display: block;
-	background: url(../../rsc/bg/elegant_grid.png);
+	background: url(../../rsc/bg/black-paper.png);
 }
 .borderb{
 	border: 1px solid black;
@@ -22,7 +22,11 @@ body{
 
 footer{
 	text-align: center;
-	background-color: rgba(79, 79, 74, 0.3);
+	background-color: white;
+	color: crimson;
+	height: 25px;
+	width: 100%;
+	background: url(../../rsc/bg/elegant_grid.png);
 }
 	footer p{
 		margin-bottom: 0;
@@ -48,89 +52,48 @@ footer{
 		width: 30px;
 		padding-left: 5px;
 	}
-#slideshow{}
-	.slide-content{
+#index-container{
+	margin: 4.8em auto;
+	color: white;
+}
+	#index-container h2{
 		text-align: center;
-		height: 25em;
-	    padding-top: 10%;
 	}
-	.slide{
-		margin: 0;
-		padding: 0;
+	#square{
+		width: fit-content;
+		text-align: center;
+		float: left;
+		margin: 2.5em;
 	}
-	.border-gradient{
-		margin: 0;
-		padding: 0;
-		height: 3px;
-		width: 100%;
-		background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-		animation-name: rainbow;
-		animation-duration: 0.5s;
-		animation-iteration-count: infinite;
+.border-gradient{
+	margin: 0;
+	padding: 0;
+	height: 3px;
+	width: 100%;
+	background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+	animation-name: rainbow;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+	@keyframes rainbow{
+		0%{background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);}
+		40%{background-image: linear-gradient(to right, yellow, green, blue, indigo, violet, red, orange);}
+		60%{background-image: linear-gradient(to right, green, blue, indigo, violet, red, orange, yellow);}
+		80%{background-image: linear-gradient(to right, blue, indigo, violet, red, orange, yellow, green);}
+		100%{background-image: linear-gradient(to right, indigo, violet, red, orange, yellow, green, blue);}
 	}
-		@keyframes rainbow{
-			0%{background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);}
-			40%{background-image: linear-gradient(to right, yellow, green, blue, indigo, violet, red, orange);}
-			60%{background-image: linear-gradient(to right, green, blue, indigo, violet, red, orange, yellow);}
-			80%{background-image: linear-gradient(to right, blue, indigo, violet, red, orange, yellow, green);}
-			100%{background-image: linear-gradient(to right, indigo, violet, red, orange, yellow, green, blue);}
-		}
-	.letter-gradient{
-		animation: one 2s infinite;
+.letter-gradient{
+	animation: one 2s infinite;
+}
+	@keyframes one{
+		0%{ color: #3097d1;}
+		20%{ color: #3097d1;}
+		40%{ color: #f39237;}
+		60%{ color: #d63230;}
+		80%{ color: #32ba88;}
+		100%{ color: #c8c2ae;}
 	}
-		@keyframes one{
-			0%{ color: #3097d1;}
-			20%{ color: #3097d1;}
-			40%{ color: #f39237;}
-			60%{ color: #d63230;}
-			80%{ color: #32ba88;}
-			100%{ color: #c8c2ae;}
-		}
-	#slide1{
-		background: url(../../rsc/bg/black-paper.png);
-		color: white;
-	}
-	#slide2{
-		background: url(../../rsc/bg/circles-light.png);
-	}
-	#slide3{
-		background: url(../../rsc/bg/ns3.jpg);
-		background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	}
-		#slide3 *{
-			color: #f48014;
-		}
-	.templates{
-		padding: 0;
-		margin: 0;
-	}
-		.templates img{
-			height: 12em;
-			width: 100%;
-			padding: 0;
-			margin: 0;
-		}
 
-	#demo{
-		height: 450px;
-		width: 100%;
-	}
-	.carousel-inner{
-		height: 100%;
-		overflow: hidden;
-	}
-	.carousel-item{
-		height: 100%;
-
-	}
-	.carousel-inner .carousel-item {
-	  transition: -webkit-transform 1s ease;
-	  transition: transform 1s ease;
-	  transition: transform 1s ease, -webkit-transform 1s ease;
-	  overflow: hidden;
-	}
 /*
 	portfolio page
 	*/
@@ -166,12 +129,24 @@ footer{
 	margin:0;
 	margin-top: 20px;
 }
+	#contact-container{
+		background: url(../../rsc/bg/circles-light.png);
+		margin: 6em auto;
+		padding: 0;
+	}
+	#contact-container *{
+		padding: 0;
+		margin: 0;
+	}
 	#g-map{
 		height: 400px;
         width: 100%;
 	}
 	#contact-text{
-		text-align: center;
-		margin-top: 50px;
-		margin-bottom: 45px;
+		text-align: left;
+		padding: 10px;
 	}
+		#contact-text h1{
+			margin: 0.7em;
+			text-align: center;
+		}
