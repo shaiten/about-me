@@ -133,28 +133,16 @@ footer{
 /*
 	contact page
 	*/
-	.slide-in {
-	  z-index: -1; /* to position it in front of the other content */
-	  position: absolute;
-	  overflow: hidden; /* to prevent scrollbar appearing */
+	#about{
+		position: relative;
 	}
-
-	.slide-in.from-left {
-	  left: 0;
+	#menu{
+		position: absolute;
+		transition: all 2s;
+		background: pink;
 	}
-	.slide-in-content {
-	  padding: 5px 20px;
-	  background: #eee;
-	  transition: all .5s ease; /* our nice transition */
-	}
-
-	.slide-in.from-left .slide-in-content {
-	  transform: translateX(-100%);
-	  -webkit-transform: translateX(-100%);
-	}
-	.slide-in.show .slide-in-content {
-	  transform: translateX(0);
-	  -webkit-transform: translateX(0);
+	.show{
+		left: -100%;
 	}
 	#g-map{
 		height: 400px;
