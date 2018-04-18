@@ -122,14 +122,51 @@ footer{
 	margin:0;
 	padding: 1em 20px;
 }
-		#portfolio img{
+		#portfolio .p-img{
 			transition: all .8s;
 			height: 10em;
 		}
-		#portfolio img:hover{
+		#portfolio .p-img:hover{
 			transform: scale(1.15);
+			cursor: pointer;
 		}
-
+		#portfolio img{
+			height: 10em;
+		}
+		.description{
+			position: fixed;
+			left: 0;
+			top: 0;
+			height: 100vh;
+			background: rgba( 128, 128, 131, 0.5);
+			z-index: 10;
+		}
+		.description-container{
+			width: 75%;
+			margin: 2% auto;
+			background: white;
+		}
+		.close-b{
+			margin-right: 20px;
+			margin-top: 10px;
+			width: 26px;
+		    height: 26px;
+		    text-align: center;
+		}
+			.close-b:hover{
+				background:  #fb300c;
+			}
+		.description-content{
+			padding: 1em 2em;
+			padding-top: 3em;
+		}
+			.description-content img{
+				height: auto !important;
+			}
+			.description-content p{
+				text-align: center;
+				margin: 1em auto;
+			}
 /*
 	contact page
 	*/
@@ -138,11 +175,19 @@ footer{
 	}
 	#menu{
 		position: absolute;
-		transition: all 2s;
-		background: pink;
+		transition: all 1s;
+		background: rgba(88, 115, 250, .9);
+	    color: white;
+	    height: 42em;
+		transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
 	}
 	.show{
-		left: -100%;
+		transform: translateX(0)!important;    /* animation only needs transform point 1 and point 2, transition handles the speed*/
+		-webkit-transform: translateX(0)!important;
+	}
+	#contact{
+		margin-top: 15%;
 	}
 	#g-map{
 		height: 400px;
