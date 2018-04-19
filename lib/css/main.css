@@ -43,11 +43,8 @@ footer{
 /*
 		index.html
 		*/
-#home-svg{
-	color: white;
-	height: 34px;
-	width: 20px;
-	margin-right: 25px;
+#about{
+	padding: 0 2em;
 }
 	#main-nav{
 		background: transparent;
