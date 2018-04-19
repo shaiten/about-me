@@ -12,10 +12,10 @@ body{
 	background: url(../../rsc/bg/circles-light.png);
 }
 #body-container{
+	height: 100vh;
 	margin: 0;
 	padding: 0;
 	position: relative;
-	transition:all 2s ease-in;
 }
 .borderb{
 	border: 1px solid black;
