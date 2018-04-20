@@ -60,7 +60,7 @@ footer{
 	  position: relative;
 	  transition: all .2s cubic-bezier(1, 0, 0.58, 0.97);
 	}
-	#contact-b a:before {
+	/*#contact-b a:before {
 	  content: '';
 	  position: absolute;
 	  width: 0;
@@ -69,7 +69,7 @@ footer{
 	  right: 0;
 	  background: #16151b;
 	  transition: inherit;
-	}
+	}*/
 	#contact-b a:hover:before {
 	  left: 0;
 	  width: 100%;
