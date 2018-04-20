@@ -5,14 +5,11 @@ body{
 	margin: 0;
 	padding: 0;
 	border: 0;
-	/*font-size: 100%;
-	font: inherit;*/
-	/*vertical-align: baseline;*/
 	display: block;
 	background: url(../../rsc/bg/circles-light.png);
 }
 #body-container{
-	height: 100vh;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -44,7 +41,11 @@ footer{
 		*/
 #about{
 	padding: 0 2em;
+	position: relative;
 }
+	#about h4{
+		margin-bottom: 3em;
+	}
 	#main-nav{
 		background: transparent;
 	}
@@ -166,15 +167,12 @@ footer{
 /*
 	contact page
 	*/
-	#about{
-		position: relative;
-	}
 	#menu{
 		position: absolute;
 		transition: all 1s;
 		background: rgba(88, 115, 250, .9);
 	    color: white;
-	    height: 42em;
+	    height: 100%;
 		transform: translateX(-100%);
 		-webkit-transform: translateX(-100%);
 	}
