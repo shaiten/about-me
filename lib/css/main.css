@@ -119,6 +119,9 @@ footer{
 	margin:0;
 	padding: 1em 20px;
 }
+	#portfolio .row{
+		margin-top: 5px;
+	}
 		#portfolio .p-img{
 			transition: all .8s;
 			height: 10em;
